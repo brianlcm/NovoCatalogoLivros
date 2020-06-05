@@ -8,7 +8,7 @@ import dao.LivroDAO;
 import org.mypackage.catalogo.Livro;
 import java.util.ArrayList;
 
-public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
+public final class resultadoPesquisa_jsp extends org.apache.jasper.runtime.HttpJspBase
     implements org.apache.jasper.runtime.JspSourceDependent {
 
   private static final JspFactory _jspxFactory = JspFactory.getDefaultFactory();
@@ -45,29 +45,28 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       _jspx_out = out;
       _jspx_resourceInjector = (org.glassfish.jsp.api.ResourceInjector) application.getAttribute("com.sun.appserv.jsp.resource.injector");
 
-      out.write("\r\n");
-      out.write("\r\n");
-      out.write("\r\n");
-      out.write("\r\n");
-      out.write("\r\n");
-      out.write("\r\n");
-      out.write("<!DOCTYPE html>\r\n");
-      out.write("<html>\r\n");
-      out.write("    <head>\r\n");
-      out.write("        <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\r\n");
-      out.write("        <title>Página Inicial</title>\r\n");
-      out.write("    </head>\r\n");
-      out.write("    <body>\r\n");
-      out.write("        <h2>Pesquisar livros</h2>\r\n");
-      out.write("        <form action=\"resultadoPesquisa.jsp\" method=\"post\">\r\n");
-      out.write("            <label>Título: </label><br/>\r\n");
-      out.write("            <input type=\"text\" name=\"titulo\"/>\r\n");
-      out.write("            <button type=\"submit\">\r\n");
-      out.write("                Pesquisar\r\n");
-      out.write("            </button>\r\n");
-      out.write("        </form>\r\n");
-      out.write("        \r\n");
-      out.write("            <h2>Lista de livros</h2>\r\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("<!DOCTYPE html>\n");
+      out.write("<html>\n");
+      out.write("    <head>\n");
+      out.write("        <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\n");
+      out.write("        <title>Resultado</title>\n");
+      out.write("    </head>\n");
+      out.write("    <body>\n");
+      out.write("        <h2>Pesquisar livros</h2>\n");
+      out.write("        <form action=\"resultadoPesquisa.jsp\" method=\"post\">\n");
+      out.write("            <label>Título: </label><br/>\n");
+      out.write("            <input type=\"text\" name=\"titulo\"/>\n");
+      out.write("            <button type=\"submit\">\n");
+      out.write("                Pesquisar\n");
+      out.write("            </button>\n");
+      out.write("            \n");
+      out.write("            <h2>Resultado da Pesquisa</h2>\n");
       out.write("            ");
 
             try{
@@ -76,7 +75,7 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
                 out.print("<th>Capa</th><th>ID</th><th>Título</th><th>Autor(a)</th><th>Ano</th><th>Preço</th><th>ID da Editora</th>");
                 out.print("</tr>");
                 LivroDAO prd = new LivroDAO();
-                ArrayList<Livro> lista =  prd.listarTodos();
+                ArrayList<Livro> lista =  prd.listarTodosTitutlo(request.getParameter("titulo"));
                 for(int num = 0; num < lista.size();num++){
                     out.print("<tr>");
                     out.print("<td>"+lista.get(num).getFoto()+"</td>");
@@ -93,22 +92,11 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
                 throw new RuntimeException("Erro 12: "+erro);
             }
         
-      out.write("\r\n");
-      out.write("        \r\n");
-      out.write("        <h2>Gerenciamento</h2>\r\n");
-      out.write("        <form action=\"verificausuario.jsp\" method=\"post\">\r\n");
-      out.write("            <label>Nome:</label><br/>\r\n");
-      out.write("            <input type=\"text\" name=\"nome\" /><br/>\r\n");
-      out.write("            \r\n");
-      out.write("            <label>Senha:</label><br/>\r\n");
-      out.write("            <input type=\"password\" name=\"senha\" /><br/><br/>\r\n");
-      out.write("\r\n");
-      out.write("            <button type=\"submit\">\r\n");
-      out.write("                <b>Entrar</b>\r\n");
-      out.write("            </button>\r\n");
-      out.write("        </form>\r\n");
-      out.write("    </body>\r\n");
-      out.write("</html>\r\n");
+      out.write("\n");
+      out.write("            \n");
+      out.write("        </form>\n");
+      out.write("    </body>\n");
+      out.write("</html>\n");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;

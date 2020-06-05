@@ -8,7 +8,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Página Inicial</title>
+        <title>Resultado</title>
     </head>
     <body>
         <h2>Pesquisar livros</h2>
@@ -18,9 +18,8 @@
             <button type="submit">
                 Pesquisar
             </button>
-        </form>
-        
-            <h2>Lista de livros</h2>
+            
+            <h2>Resultado da Pesquisa</h2>
             <%
             try{
                 out.print("<table border='1'>");
@@ -28,7 +27,7 @@
                 out.print("<th>Capa</th><th>ID</th><th>Título</th><th>Autor(a)</th><th>Ano</th><th>Preço</th><th>ID da Editora</th>");
                 out.print("</tr>");
                 LivroDAO prd = new LivroDAO();
-                ArrayList<Livro> lista =  prd.listarTodos();
+                ArrayList<Livro> lista =  prd.listarTodosTitutlo(request.getParameter("titulo"));
                 for(int num = 0; num < lista.size();num++){
                     out.print("<tr>");
                     out.print("<td>"+lista.get(num).getFoto()+"</td>");
@@ -45,18 +44,7 @@
                 throw new RuntimeException("Erro 12: "+erro);
             }
         %>
-        
-        <h2>Gerenciamento</h2>
-        <form action="verificausuario.jsp" method="post">
-            <label>Nome:</label><br/>
-            <input type="text" name="nome" /><br/>
             
-            <label>Senha:</label><br/>
-            <input type="password" name="senha" /><br/><br/>
-
-            <button type="submit">
-                <b>Entrar</b>
-            </button>
         </form>
     </body>
 </html>

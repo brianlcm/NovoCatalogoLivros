@@ -20,7 +20,7 @@ public class LivroDAO {
     }
 
     public void inserir(Livro livro) {
-        String sql = "INSERT INTO livro (titulo, autor, ano, preco, foto) VALUES (?,?,?,?,?)";
+        String sql = "INSERT INTO livro (titulo, autor, ano, preco, foto, idEditora) VALUES (?,?,?,?,?,?)";
         try {
             stmt = conn.prepareStatement(sql);
             stmt.setString(1, livro.getTitulo());
@@ -28,6 +28,7 @@ public class LivroDAO {
             stmt.setInt(3, livro.getAno());
             stmt.setDouble(4, livro.getPreco());
             stmt.setString(5, livro.getFoto());
+            stmt.setInt(6, livro.getIdEditora());
             stmt.execute();
             stmt.close();
         } catch (Exception erro) {

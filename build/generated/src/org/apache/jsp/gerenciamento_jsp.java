@@ -41,25 +41,25 @@ public final class gerenciamento_jsp extends org.apache.jasper.runtime.HttpJspBa
       _jspx_out = out;
       _jspx_resourceInjector = (org.glassfish.jsp.api.ResourceInjector) application.getAttribute("com.sun.appserv.jsp.resource.injector");
 
-      out.write("\n");
-      out.write("<!DOCTYPE html>\n");
-      out.write("<html>\n");
-      out.write("    <head>\n");
-      out.write("        <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\n");
-      out.write("        <title>Gerenciamento</title>\n");
-      out.write("    </head>\n");
-      out.write("    <body>\n");
-      out.write("    <center>\n");
-      out.write("        <h2>\n");
-      out.write("            <p><b><a href=\"adicionarlivro.jsp\">Adicionar Livro</a></b></p>\n");
-      out.write("            <p><b><a href=\"adicionareditora.jsp\">Adicionar Editora</a></b></p>\n");
-      out.write("            <p><b><a href=\"listalivrosedicao.jsp\">Editar Livros</a></b></p>\n");
-      out.write("            <p><b><a href=\"adicionarusuario.jsp\">Adicionar Usuário</a></b></p>\n");
-      out.write("            <p><b><a href=\"index.jsp\">Sair</a></p>\n");
-      out.write("        </h2>\n");
-      out.write("    </center>\n");
-      out.write("</body>\n");
-      out.write("</html>\n");
+      out.write("\r\n");
+      out.write("<!DOCTYPE html>\r\n");
+      out.write("<html>\r\n");
+      out.write("    <head>\r\n");
+      out.write("        <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\r\n");
+      out.write("        <title>Gerenciamento</title>\r\n");
+      out.write("    </head>\r\n");
+      out.write("    <body>\r\n");
+      out.write("    <center>\r\n");
+      out.write("        <h2>\r\n");
+      out.write("            <p><b><a href=\"adicionarlivro.jsp\">Adicionar Livro</a></b></p>\r\n");
+      out.write("            <p><b><a href=\"adicionareditora.jsp\">Adicionar Editora</a></b></p>\r\n");
+      out.write("            <p><b><a href=\"listalivrosedicao.jsp\">Editar Livros</a></b></p>\r\n");
+      out.write("            <p><b><a href=\"adicionarusuario.jsp\">Adicionar Usuário</a></b></p>\r\n");
+      out.write("            <p><b><a href=\"index.jsp\">Sair</a></p>\r\n");
+      out.write("        </h2>\r\n");
+      out.write("    </center>\r\n");
+      out.write("</body>\r\n");
+      out.write("</html>\r\n");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;
