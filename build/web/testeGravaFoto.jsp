@@ -1,11 +1,11 @@
-<%@ page language="java" import="org.apache.commons.fileupload.*, java.util.*, java.sql.*" %>
+<%@ page language="java" import="org.apache.commons.fileupload.*, org.apache.commons.fileupload.servlet.*, java.util.*, java.sql.*" %>
 <html>
 <body bgcolor="#FFFFFF">
 <%
     // Verificando se o form possui campo(s) com dados binários
-    if (FileUpload.isMultipartContent(request)) {
+    if (ServletFileUpload.isMultipartContent(request)) {
     // criando o objeto para cuidar do upload
-    DiskFileUpload fu = new DiskFileUpload();
+    ServletFileUpload fu = new ServletFileUpload();
     // setando o tamanho maximo em bytes para upload
     fu.setSizeMax(800000);
     try {
@@ -34,8 +34,7 @@
                 // chamado o método estático para conectar com o banco
                 Connection con = MyConnection.createConnection("bolao");
                 // onde tem ???, será substituído por valores posteriormente.
-                PreparedStatement pstm = con.prepareStatement("INSERT INTO
-                foto (comentario, foto) VALUES (?, ?)");
+                PreparedStatement pstm = con.prepareStatement("INSERT INTO foto (comentario, foto) VALUES (?, ?)");
                 // inserindo o comentário no lugar da primeira interrogação
                 pstm.setString(1, cmt);
                 // inserindo a foto no lugar da segunda interrogação
@@ -45,13 +44,11 @@
             }
         }
     } catch (FileUploadException e) {
-        out.print(?Erro no upload do arquivo?);
+        out.print("Erro no upload do arquivo");
     } catch (SQLException e) {
-        out.print(?Erro na consulta com o banco de dados?);
+        out.print("Erro na consulta com o banco de dados");
     } catch (Exception e) {
         out.print(e.getMessage());
-    }else {
-        out.print(?O Formulario nao possui dados binários?)
     }
 } %>
 <h2>Fonto inserida com sucesso no banco de dados!</h2>

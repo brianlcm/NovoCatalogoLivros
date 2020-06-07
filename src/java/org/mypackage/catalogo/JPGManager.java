@@ -5,6 +5,11 @@
  */
 package org.mypackage.catalogo;
 
+import java.io.*;
+import java.awt.image.BufferedImage;
+import com.sun.image.codec.jpeg.JPEGCodec;
+import com.sun.image.codec.jpeg.JPEGImageDecoder;
+import com.sun.image.codec.jpeg.JPEGImageEncoder;
 /**
  *
  * @author crist
@@ -12,13 +17,14 @@ package org.mypackage.catalogo;
 public class JPGManager {
     static public void encodeJPG(OutputStream out, byte [] image) throws IOException{
         int BUFFER = image.length;
-        InputStream fs = new ByteArrayInputStream(image);
-        JPEGImageDecoder decoder = JPEGCodec.createJPEGDecoder(fs);
-        BufferedImage bImage = decoder.decodeAsBufferedImage();
-        JPEGImageEncoder encoder = JPEGCodec.createJPEGEncoder(out);
-        encoder.encode(bImage);
-        fs.close();
-        fs = null;
+        BufferedImage bImage;
+        JPEGImageEncoder encoder;
+        try (InputStream fs = new ByteArrayInputStream(image)) {
+            JPEGImageDecoder decoder = JPEGCodec.createJPEGDecoder(fs);
+            bImage = decoder.decodeAsBufferedImage();
+            encoder = JPEGCodec.createJPEGEncoder(out);
+            encoder.encode(bImage);
+        }
         encoder = null;
         bImage = null;
     }
