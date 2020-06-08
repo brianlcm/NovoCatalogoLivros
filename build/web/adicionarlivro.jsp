@@ -3,11 +3,12 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link href="estilo.css" rel="stylesheet">
         <title>Adicionar Livro</title>
     </head>
     <body>
-        <h1>Adicionar Livro</h1>
-        <form action="executaadicionarlivro.jsp" method="post">
+        <h1 class="titulo">Adicionar Livro</h1>
+        <form class="tabelaFormulario" action="executaadicionarlivro.jsp" method="post" enctype="multipart/form-data">
             
             <label>Título:</label><br/>
             <input type="text" name="titulo" /><br/>
@@ -25,11 +26,12 @@
             <input type="number" name="idEditora" /><br/>
 
             <label>Foto da Capa:</label><br/>
-            <input type="text" name="foto" /><br/><br/>
+            <input type="file" name="foto" /><br/><br/>
 
             <button type="submit">
                 <b>Confirmar</b>
             </button>
         </form>
+        <br/><b><a class="linkVoltarParaHome" href="gerenciamento.jsp">Voltar para a página de Gerenciamento</a></b>
     </body>
 </html>

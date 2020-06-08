@@ -55,11 +55,12 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("<html>\r\n");
       out.write("    <head>\r\n");
       out.write("        <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\r\n");
+      out.write("        <link href=\"estilo.css\" rel=\"stylesheet\">\r\n");
       out.write("        <title>Página Inicial</title>\r\n");
       out.write("    </head>\r\n");
       out.write("    <body>\r\n");
       out.write("        <h2>Pesquisar livros</h2>\r\n");
-      out.write("        <form action=\"resultadoPesquisa.jsp\" method=\"post\">\r\n");
+      out.write("        <form class=\"pesquisa\" action=\"resultadoPesquisa.jsp\" method=\"post\">\r\n");
       out.write("            <label>Título: </label><br/>\r\n");
       out.write("            <input type=\"text\" name=\"titulo\"/>\r\n");
       out.write("            <button type=\"submit\">\r\n");
@@ -71,7 +72,7 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("            ");
 
             try{
-                out.print("<table border='1'>");
+                out.print("<table class='tabela'>");
                 out.print("<tr>");
                 out.print("<th>Capa</th><th>ID</th><th>Título</th><th>Autor(a)</th><th>Ano</th><th>Preço</th><th>ID da Editora</th>");
                 out.print("</tr>");
@@ -79,7 +80,7 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
                 ArrayList<Livro> lista =  prd.listarTodos();
                 for(int num = 0; num < lista.size();num++){
                     out.print("<tr>");
-                    out.print("<td>"+lista.get(num).getFoto()+"</td>");
+                    out.print("<td><img src='fotos/"+lista.get(num).getFoto()+"'width='80px' height='100px'/> </td>");
                     out.print("<td>"+lista.get(num).getId()+"</td>");
                     out.print("<td>"+lista.get(num).getTitulo()+"</td>");
                     out.print("<td>"+lista.get(num).getAutor()+"</td>");

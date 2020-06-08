@@ -1,11 +1,14 @@
 package dao;
 
 import java.sql.Connection;
+import dao.Conexao;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.Statement;
 import java.util.ArrayList;
 import org.mypackage.catalogo.Livro;
+import javax.persistence.EntityManager;
+import javax.persistence.EntityManagerFactory;
 
 public class LivroDAO {
 
@@ -14,9 +17,10 @@ public class LivroDAO {
     private Statement st;
     private ResultSet rs;
     private ArrayList<Livro> lista = new ArrayList<>();
+    EntityManager em;
 
-    public LivroDAO() {
-        conn = new ConnectionFactory().getConexao();
+    public LivroDAO() throws Exception {
+        conn = new ConnectionFactory().getConexao();;
     }
 
     public void inserir(Livro livro) {
@@ -35,7 +39,7 @@ public class LivroDAO {
             throw new RuntimeException("Erro 2: " + erro);
         }
     }
-
+    
     public void alterar(Livro livro) {
         String sql = "UPDATE livro SET titulo = ?, autor = ?, ano = ?, preco = ?, foto = ? WHERE id = ?";
         try {

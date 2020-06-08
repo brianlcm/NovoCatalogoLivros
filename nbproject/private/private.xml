@@ -2,6 +2,16 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group/>
+        <group>
+            <file>file:/C:/Users/brian/Documents/Acadêmico/NovoCatalogoLivros/src/java/dao/Conexao.java</file>
+            <file>file:/C:/Users/brian/Documents/Acadêmico/NovoCatalogoLivros/web/executaadicionarlivro.jsp</file>
+            <file>file:/C:/Users/brian/Documents/Acadêmico/NovoCatalogoLivros/web/editarlivro.jsp</file>
+            <file>file:/C:/Users/brian/Documents/Acadêmico/NovoCatalogoLivros/src/java/dao/LivroDAO.java</file>
+            <file>file:/C:/Users/brian/Documents/Acadêmico/NovoCatalogoLivros/web/index.jsp</file>
+            <file>file:/C:/Users/brian/Documents/Acadêmico/NovoCatalogoLivros/web/executaeditarlivro.jsp</file>
+            <file>file:/C:/Users/brian/Documents/Acadêmico/NovoCatalogoLivros/web/executaadicionaeditora.jsp</file>
+            <file>file:/C:/Users/brian/Documents/Acadêmico/NovoCatalogoLivros/web/adicionarlivro.jsp</file>
+            <file>file:/C:/Users/brian/Documents/Acadêmico/NovoCatalogoLivros/web/listalivrosedicao.jsp</file>
+        </group>
     </open-files>
 </project-private>
