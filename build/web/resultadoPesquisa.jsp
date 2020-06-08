@@ -30,7 +30,7 @@
                 ArrayList<Livro> lista =  prd.listarTodosTitutlo(request.getParameter("titulo"));
                 for(int num = 0; num < lista.size();num++){
                     out.print("<tr>");
-                    out.print("<td>"+lista.get(num).getFoto()+"</td>");
+                    out.print("<td><img src='fotos/"+lista.get(num).getFoto()+"' width='20px' height='20px'/></td>");
                     out.print("<td>"+lista.get(num).getId()+"</td>");
                     out.print("<td>"+lista.get(num).getTitulo()+"</td>");
                     out.print("<td>"+lista.get(num).getAutor()+"</td>");

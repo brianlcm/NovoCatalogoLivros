@@ -7,7 +7,7 @@
     </head>
     <body>
         <h1>Editar Livro</h1>
-        <form action="executaeditarlivro.jsp" method="post">
+        <form action="executaeditarlivro.jsp" method="post"  enctype="multipart/form-data">
             <label>Título:</label><br/>
             <input type="text" name="titulo" value="<%=request.getParameter("titulo")%>"/><br/>
 
@@ -22,10 +22,10 @@
             
 
             <label>Nova foto:</label><br/>
-            <input type="text" name="foto" value="<%=request.getParameter("foto")%>"/><br/>
-
-
-            <!-- Podemos mostrar a foto atual aqui -->
+            <input type="file" name="foto"/><br/>
+            
+            <label>Editora:</label><br/>
+            <input type="text" name="foto" value="<%=request.getParameter("idEditora")%>"/><br/>
 
             <label>ID:</label><br/> 
             <input readonly=“true” type="number" name="id" value="<%=request.getParameter("id")%>"/><br/><br/>

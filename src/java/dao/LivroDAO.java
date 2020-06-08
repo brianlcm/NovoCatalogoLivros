@@ -37,7 +37,7 @@ public class LivroDAO {
     }
 
     public void alterar(Livro livro) {
-        String sql = "UPDATE livro SET titulo = ?, autor = ?, ano = ?, preco = ?, foto = ? WHERE id = ?";
+        String sql = "UPDATE livro SET titulo = ?, autor = ?, ano = ?, preco = ?, foto = ?, idEditora=? WHERE id = ?";
         try {
             stmt = conn.prepareStatement(sql);
             stmt.setString(1, livro.getTitulo());
@@ -45,7 +45,7 @@ public class LivroDAO {
             stmt.setInt(3, livro.getAno());
             stmt.setDouble(4, livro.getPreco());
             stmt.setString(5, livro.getFoto());
-            stmt.setInt(6, livro.getId());
+            stmt.setInt(6, livro.getIdEditora());
             stmt.execute();
             stmt.close();
         } catch (Exception erro) {

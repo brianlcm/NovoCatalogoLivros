@@ -7,7 +7,7 @@
     </head>
     <body>
         <h1>Adicionar Livro</h1>
-        <form action="executaadicionarlivro.jsp" method="post">
+        <form action="executaadicionarlivro.jsp" method="post" enctype="multipart/form-data">
             
             <label>Título:</label><br/>
             <input type="text" name="titulo" /><br/>
@@ -25,7 +25,7 @@
             <input type="number" name="idEditora" /><br/>
 
             <label>Foto da Capa:</label><br/>
-            <input type="text" name="foto" /><br/><br/>
+            <input type="file" name="foto" /><br/><br/>
 
             <button type="submit">
                 <b>Confirmar</b>
