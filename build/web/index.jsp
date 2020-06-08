@@ -31,7 +31,7 @@
                 ArrayList<Livro> lista =  prd.listarTodos();
                 for(int num = 0; num < lista.size();num++){
                     out.print("<tr style=\"text-align: center\">");
-                    out.print("<td style=\"text-align: center\"><img src='fotos/"+lista.get(num).getFoto()+"'width='80px' height='100px'/> </td>");
+                    out.print("<td style=\"text-align: center\"><img src='fotos/"+lista.get(num).getFoto()+"'width='80px' height='120px'/> </td>");
                     out.print("<td style=\"text-align: center\">"+lista.get(num).getId()+"</td>");
                     out.print("<td style=\"text-align: center\">"+lista.get(num).getTitulo()+"</td>");
                     out.print("<td style=\"text-align: center\">"+lista.get(num).getAutor()+"</td>");

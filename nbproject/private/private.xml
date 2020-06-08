@@ -3,21 +3,21 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/crist/OneDrive/Documentos/NetBeansProjects/NovoCatalogoLivros/src/java/dao/EditoraDAO.java</file>
-            <file>file:/C:/Users/crist/OneDrive/Documentos/NetBeansProjects/NovoCatalogoLivros/web/editarlivro.jsp</file>
-            <file>file:/C:/Users/crist/OneDrive/Documentos/NetBeansProjects/NovoCatalogoLivros/src/java/org/mypackage/catalogo/Livro.java</file>
-            <file>file:/C:/Users/crist/OneDrive/Documentos/NetBeansProjects/NovoCatalogoLivros/src/java/dao/UsuarioDAO.java</file>
             <file>file:/C:/Users/crist/OneDrive/Documentos/NetBeansProjects/NovoCatalogoLivros/web/executaadicionaeditora.jsp</file>
-            <file>file:/C:/Users/crist/OneDrive/Documentos/NetBeansProjects/NovoCatalogoLivros/web/resultadoPesquisa.jsp</file>
-            <file>file:/C:/Users/crist/OneDrive/Documentos/NetBeansProjects/NovoCatalogoLivros/web/gerenciamento.jsp</file>
-            <file>file:/C:/Users/crist/OneDrive/Documentos/NetBeansProjects/NovoCatalogoLivros/src/java/org/mypackage/catalogo/Usuario.java</file>
-            <file>file:/C:/Users/crist/OneDrive/Documentos/NetBeansProjects/NovoCatalogoLivros/src/java/org/mypackage/catalogo/Editora.java</file>
-            <file>file:/C:/Users/crist/OneDrive/Documentos/NetBeansProjects/NovoCatalogoLivros/web/executaeditarlivro.jsp</file>
             <file>file:/C:/Users/crist/OneDrive/Documentos/NetBeansProjects/NovoCatalogoLivros/src/java/dao/ConnectionFactory.java</file>
-            <file>file:/C:/Users/crist/OneDrive/Documentos/NetBeansProjects/NovoCatalogoLivros/src/java/dao/LivroDAO.java</file>
+            <file>file:/C:/Users/crist/OneDrive/Documentos/NetBeansProjects/NovoCatalogoLivros/web/editarlivro.jsp</file>
+            <file>file:/C:/Users/crist/OneDrive/Documentos/NetBeansProjects/NovoCatalogoLivros/web/adicionarusuario.jsp</file>
+            <file>file:/C:/Users/crist/OneDrive/Documentos/NetBeansProjects/NovoCatalogoLivros/src/java/dao/EditoraDAO.java</file>
             <file>file:/C:/Users/crist/OneDrive/Documentos/NetBeansProjects/NovoCatalogoLivros/web/executaadicionarlivro.jsp</file>
             <file>file:/C:/Users/crist/OneDrive/Documentos/NetBeansProjects/NovoCatalogoLivros/web/adicionarlivro.jsp</file>
+            <file>file:/C:/Users/crist/OneDrive/Documentos/NetBeansProjects/NovoCatalogoLivros/web/listalivrosedicao.jsp</file>
+            <file>file:/C:/Users/crist/OneDrive/Documentos/NetBeansProjects/NovoCatalogoLivros/src/java/org/mypackage/catalogo/Usuario.java</file>
             <file>file:/C:/Users/crist/OneDrive/Documentos/NetBeansProjects/NovoCatalogoLivros/web/index.jsp</file>
+            <file>file:/C:/Users/crist/OneDrive/Documentos/NetBeansProjects/NovoCatalogoLivros/src/java/dao/UsuarioDAO.java</file>
+            <file>file:/C:/Users/crist/OneDrive/Documentos/NetBeansProjects/NovoCatalogoLivros/src/java/util/Upload.java</file>
+            <file>file:/C:/Users/crist/OneDrive/Documentos/NetBeansProjects/NovoCatalogoLivros/src/java/org/mypackage/catalogo/Editora.java</file>
+            <file>file:/C:/Users/crist/OneDrive/Documentos/NetBeansProjects/NovoCatalogoLivros/web/executaeditarlivro.jsp</file>
+            <file>file:/C:/Users/crist/OneDrive/Documentos/NetBeansProjects/NovoCatalogoLivros/src/java/dao/LivroDAO.java</file>
         </group>
     </open-files>
 </project-private>
