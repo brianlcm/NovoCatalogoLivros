@@ -7,8 +7,8 @@
         <title>Adicionar Livro</title>
     </head>
     <body>
-        <h1>Adicionar Livro</h1>
-        <form action="executaadicionarlivro.jsp" method="post" enctype="multipart/form-data">
+        <h1 class="titulo">Adicionar Livro</h1>
+        <form class="tabelaFormulario" action="executaadicionarlivro.jsp" method="post" enctype="multipart/form-data">
             
             <label>Título:</label><br/>
             <input type="text" name="titulo" /><br/>

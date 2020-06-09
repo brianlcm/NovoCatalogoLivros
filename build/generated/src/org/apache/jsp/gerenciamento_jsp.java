@@ -50,16 +50,14 @@ public final class gerenciamento_jsp extends org.apache.jasper.runtime.HttpJspBa
       out.write("        <title>Gerenciamento</title>\r\n");
       out.write("    </head>\r\n");
       out.write("    <body>\r\n");
-      out.write("    <center>\r\n");
-      out.write("        <h2>\r\n");
-      out.write("            <a href=\"adicionarlivro.jsp\"><button class=\"button\" type=\"button\"><b>Adicionar Livro</b></button></a>\r\n");
-      out.write("            <a href=\"adicionareditora.jsp\"><button class=\"button\"><b>Adicionar Editora</b></button></a>\r\n");
-      out.write("            <a href=\"listalivrosedicao.jsp\"><button class=\"button\"><b>Editar Livros</b></button></a>\r\n");
-      out.write("            <a href=\"adicionarusuario.jsp\"><button class=\"button\"><b>Adicionar Usuário</b></button></a>\r\n");
-      out.write("           <a href=\"index.jsp\"> <button class=\"button\"><b>Sair</b></button></a>\r\n");
-      out.write("        </h2>\r\n");
-      out.write("    </center>\r\n");
-      out.write("</body>\r\n");
+      out.write("        <div class=\"tabelaPesquisa\" style=\"display: flex; flex-direction: column; align-items: center\">\r\n");
+      out.write("                <a href=\"adicionarlivro.jsp\"><button class=\"button\" type=\"button\"><b>Adicionar Livro</b></button></a>\r\n");
+      out.write("                <a href=\"adicionareditora.jsp\"><button class=\"button\"><b>Adicionar Editora</b></button></a>\r\n");
+      out.write("                <a href=\"listalivrosedicao.jsp\"><button class=\"button\"><b>Editar Livros</b></button></a>\r\n");
+      out.write("                <a href=\"adicionarusuario.jsp\"><button class=\"button\"><b>Adicionar Usuário</b></button></a>\r\n");
+      out.write("               <a href=\"index.jsp\"> <button class=\"button\"><b>Sair</b></button></a>\r\n");
+      out.write("        </div>\r\n");
+      out.write("    </body>\r\n");
       out.write("</html>\r\n");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){

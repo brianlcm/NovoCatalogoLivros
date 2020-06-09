@@ -12,18 +12,18 @@
         <title>Resultado</title>
     </head>
     <body>
-        <h2>Pesquisar livros</h2>
-        <form action="resultadoPesquisa.jsp" method="post">
+        <h2 class="titulo">Pesquisar livros</h2>
+        <form class="tabelaPesquisa" action="resultadoPesquisa.jsp" method="post">
             <label>Título: </label><br/>
             <input type="text" name="titulo"/>
-            <button class="button" bytpe="submit">
+            <button class="button" style="display: inline; width: 130px" type="submit">
                 Pesquisar
             </button>
             
             <h2>Resultado da Pesquisa</h2>
             <%
             try{
-                out.print("<table border='1'>");
+                out.print("<table class='tabela' border='1'>");
                 out.print("<tr>");
                 out.print("<th>Capa</th><th>ID</th><th>Título</th><th>Autor(a)</th><th>Ano</th><th>Preço</th><th>ID da Editora</th>");
                 out.print("</tr>");

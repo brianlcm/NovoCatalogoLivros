@@ -53,19 +53,20 @@ public final class listalivrosedicao_jsp extends org.apache.jasper.runtime.HttpJ
       out.write("<html>\r\n");
       out.write("    <head>\r\n");
       out.write("        <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\r\n");
+      out.write("        <link href=\"estilo.css\" rel=\"stylesheet\">\r\n");
       out.write("        <title>Editar Livros</title>\r\n");
       out.write("    </head>\r\n");
       out.write("    <body>\r\n");
-      out.write("        <form action=\"listalivrosedicao.jsp\" method=\"post\">\r\n");
+      out.write("        <form class=\"tabelaPesquisa\" action=\"listalivrosedicao.jsp\" method=\"post\">\r\n");
       out.write("            <label>Título: </label><br/>\r\n");
       out.write("            <input type=\"text\" name=\"titulo\"/>\r\n");
-      out.write("            <button type=\"submit\">\r\n");
+      out.write("            <button class=\"button\" type=\"submit\">\r\n");
       out.write("                Pesquisar\r\n");
       out.write("            </button>\r\n");
       out.write("            <br/><br/>");
 
                 try {
-                    out.print("<table border='1'>");
+                    out.print("<table class='tabela' border='1'>");
                     out.print("<tr>");
                     out.print("<th>Capa</th><th>ID</th><th>Título</th><th>Autor(a)</th><th>Ano</th><th>Preço</th><th>ID da Editora</th><th>Editar</th>");
                     out.print("</tr>");

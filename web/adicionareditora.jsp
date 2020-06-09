@@ -7,9 +7,9 @@
         <title>Adicionar Editora</title>
     </head>
     <body>
-        <h1>Adicionar Editora</h1>
+        <h1 class="titulo">Adicionar Editora</h1>
 
-        <form action="executaadicionaeditora.jsp" method="post">
+        <form class="tabelaFormulario" action="executaadicionaeditora.jsp" method="post">
             <label>Nome</label><br/>
             <input type="text" name="nome" /><br/>
 

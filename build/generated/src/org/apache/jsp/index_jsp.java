@@ -59,11 +59,11 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("        <title>Página Inicial</title>\r\n");
       out.write("    </head>\r\n");
       out.write("    <body>\r\n");
-      out.write("        <h2>Pesquisar livros</h2>\r\n");
-      out.write("        <form action=\"resultadoPesquisa.jsp\" method=\"post\">\r\n");
+      out.write("        <h2 class=\"titulo\">Pesquisar livros</h2>\r\n");
+      out.write("        <form class=\"tabelaPesquisa\" action=\"resultadoPesquisa.jsp\" method=\"post\">\r\n");
       out.write("            <label>Título: </label><br/>\r\n");
       out.write("            <input type=\"text\" name=\"titulo\"/>\r\n");
-      out.write("            <button type=\"submit\">\r\n");
+      out.write("            <button class=\"button\" style=\"display: inline; width: 130px\" type=\"submit\">\r\n");
       out.write("                Pesquisar\r\n");
       out.write("            </button>\r\n");
       out.write("        </form>\r\n");
@@ -72,7 +72,7 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("            ");
 
             try{
-                out.print("<table border='1'>");
+                out.print("<table class='tabela' border='1'>");
                 out.print("<tr>");
                 out.print("<th>Capa</th><th>ID</th><th>Título</th><th>Autor(a)</th><th>Ano</th><th>Preço</th><th>ID da Editora</th>");
                 out.print("</tr>");

@@ -7,14 +7,12 @@
         <title>Gerenciamento</title>
     </head>
     <body>
-    <center>
-        <h2>
-            <a href="adicionarlivro.jsp"><button class="button" type="button"><b>Adicionar Livro</b></button></a>
-            <a href="adicionareditora.jsp"><button class="button"><b>Adicionar Editora</b></button></a>
-            <a href="listalivrosedicao.jsp"><button class="button"><b>Editar Livros</b></button></a>
-            <a href="adicionarusuario.jsp"><button class="button"><b>Adicionar Usuário</b></button></a>
-           <a href="index.jsp"> <button class="button"><b>Sair</b></button></a>
-        </h2>
-    </center>
-</body>
+        <div class="tabelaPesquisa" style="display: flex; flex-direction: column; align-items: center">
+                <a href="adicionarlivro.jsp"><button class="button" type="button"><b>Adicionar Livro</b></button></a>
+                <a href="adicionareditora.jsp"><button class="button"><b>Adicionar Editora</b></button></a>
+                <a href="listalivrosedicao.jsp"><button class="button"><b>Editar Livros</b></button></a>
+                <a href="adicionarusuario.jsp"><button class="button"><b>Adicionar Usuário</b></button></a>
+               <a href="index.jsp"> <button class="button"><b>Sair</b></button></a>
+        </div>
+    </body>
 </html>

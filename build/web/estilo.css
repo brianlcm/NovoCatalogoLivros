@@ -13,7 +13,8 @@ a {
   border: none;
   border-radius: 25px;
   color: white;
-  padding: 15px 32px;
+  height: 40px;
+  padding: 5px 15px;
   text-align: center;
   text-decoration: none;
   display: block;
@@ -71,6 +72,11 @@ a {
     color: black;
     background: #cccccc;
     border-radius: 8px;
+}
+
+.tabelaPesquisa h2{
+    text-align:center;
+    align-self: center;
 }
 
 .linkVoltarParaHome{

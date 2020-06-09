@@ -11,15 +11,15 @@
         <title>Editar Livros</title>
     </head>
     <body>
-        <form action="listalivrosedicao.jsp" method="post">
+        <form class="tabelaPesquisa" action="listalivrosedicao.jsp" method="post">
             <label>Título: </label><br/>
             <input type="text" name="titulo"/>
-            <button class="button" type="submit">
+            <button class="button" style="display: inline; width: 130px" type="submit">
                 Pesquisar
             </button>
             <br/><br/><%
                 try {
-                    out.print("<table border='1'>");
+                    out.print("<table class='tabela' border='1'>");
                     out.print("<tr>");
                     out.print("<th>Capa</th><th>ID</th><th>Título</th><th>Autor(a)</th><th>Ano</th><th>Preço</th><th>ID da Editora</th><th>Editar</th>");
                     out.print("</tr>");
