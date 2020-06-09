@@ -3,6 +3,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link href="estilo.css" rel="stylesheet">
         <title>Adicionar Livro</title>
     </head>
     <body>
@@ -27,7 +28,7 @@
             <label>Foto da Capa:</label><br/>
             <input type="file" name="foto" /><br/><br/>
 
-            <button type="submit">
+            <button class="button" type="submit">
                 <b>Confirmar</b>
             </button>
         </form>

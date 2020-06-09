@@ -7,13 +7,14 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link href="estilo.css" rel="stylesheet">
         <title>Editar Livros</title>
     </head>
     <body>
         <form action="listalivrosedicao.jsp" method="post">
             <label>Título: </label><br/>
             <input type="text" name="titulo"/>
-            <button type="submit">
+            <button class="button" type="submit">
                 Pesquisar
             </button>
             <br/><br/><%

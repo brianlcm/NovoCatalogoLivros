@@ -8,6 +8,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link href="estilo.css" rel="stylesheet">
         <title>Resultado</title>
     </head>
     <body>
@@ -15,7 +16,7 @@
         <form action="resultadoPesquisa.jsp" method="post">
             <label>Título: </label><br/>
             <input type="text" name="titulo"/>
-            <button type="submit">
+            <button class="button" bytpe="submit">
                 Pesquisar
             </button>
             

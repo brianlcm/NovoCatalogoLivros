@@ -3,6 +3,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link href="estilo.css" rel="stylesheet">
         <title>Editar Livros</title>
     </head>
     <body>
@@ -30,7 +31,7 @@
             <label>ID:</label><br/> 
             <input readonly=“true” type="number" name="id" value="<%=request.getParameter("id")%>"/><br/><br/>
             
-            <button type="submit">
+            <button class="button" type="submit">
                 <b>Salvar</b>
             </button>
         </form>

@@ -8,6 +8,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link href="estilo.css" rel="stylesheet">
         <title>Página Inicial</title>
     </head>
     <body>
@@ -54,7 +55,7 @@
             <label>Senha:</label><br/>
             <input type="password" name="senha" /><br/><br/>
 
-            <button type="submit">
+            <button class="button" type="submit">
                 <b>Entrar</b>
             </button>
         </form>

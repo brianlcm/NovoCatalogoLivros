@@ -55,6 +55,7 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("<html>\r\n");
       out.write("    <head>\r\n");
       out.write("        <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\r\n");
+      out.write("        <link href=\"estilo.css\" rel=\"stylesheet\">\r\n");
       out.write("        <title>Página Inicial</title>\r\n");
       out.write("    </head>\r\n");
       out.write("    <body>\r\n");
@@ -79,7 +80,7 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
                 ArrayList<Livro> lista =  prd.listarTodos();
                 for(int num = 0; num < lista.size();num++){
                     out.print("<tr style=\"text-align: center\">");
-                    out.print("<td style=\"text-align: center\"><img src='fotos/"+lista.get(num).getFoto()+"'width='80px' height='100px'/> </td>");
+                    out.print("<td style=\"text-align: center\"><img src='fotos/"+lista.get(num).getFoto()+"'width='80px' height='120px'/> </td>");
                     out.print("<td style=\"text-align: center\">"+lista.get(num).getId()+"</td>");
                     out.print("<td style=\"text-align: center\">"+lista.get(num).getTitulo()+"</td>");
                     out.print("<td style=\"text-align: center\">"+lista.get(num).getAutor()+"</td>");
@@ -103,7 +104,7 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("            <label>Senha:</label><br/>\r\n");
       out.write("            <input type=\"password\" name=\"senha\" /><br/><br/>\r\n");
       out.write("\r\n");
-      out.write("            <button type=\"submit\">\r\n");
+      out.write("            <button class=\"button\" type=\"submit\">\r\n");
       out.write("                <b>Entrar</b>\r\n");
       out.write("            </button>\r\n");
       out.write("        </form>\r\n");
